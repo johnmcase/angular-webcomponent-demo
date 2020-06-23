@@ -27,15 +27,17 @@
               "src/favicon.ico",
               "src/assets",
               {
-                "glob": "**/*.js",
-                "input": "node_modules/@webcomponents/webcomponentsjs",
-                "output": "webcomponents/"
+                "glob": "{custom-elements-es5-adapter.js,*loader.js,bundles/*.js,bundles/*.map}",
+                "input": "node_modules/@webcomponents/webcomponentsjs/",
+                "output": "./assets/static/"
               }
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js",
+              "node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"]
           },
           "configurations": {
             "production": {
@@ -65,6 +67,9 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "es5": {
+              "tsConfig": "./tsconfig.es5.json"
             }
           }
         },
@@ -76,6 +81,9 @@
           "configurations": {
             "production": {
               "browserTarget": "angular-webcomponent-demo:build:production"
+            },
+            "es5": {
+              "browserTarget": "angular-webcomponent-demo:build:es5"
             }
           }
         },
@@ -99,7 +107,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [ ]
           }
         },
         "lint": {
