@@ -1,23 +1,16 @@
-<html lang="en">
+<div class="container">
+  <div>
+    <h1>Symplr Webcomponent Library</h1>
+    <h2>Angular Project</h2>
+    <p>Demonstrates web components compiled with Direflow consumed in a sample Angular application</p>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-  <h1>Symplr Webcomponent Library</h1>
-  <p>A simple demo of webcomponents compiled from FluentUI through the Direflow package.</p>
-  <div class="ms-Grid" dir="ltr">
-    <div class="ms-Grid-row">
-      <div class="ms-Grid-col ms-xs12 ms-lg4">
-        <symplr-button label="Default Button"></symplr-button>
-      </div>
-      <div class="ms-Grid-col ms-xs12 ms-lg4">
-        <symplr-button label="Primary Button" isPrimaryButton="true"></symplr-button>
-      </div>
-    </div>
+    <sympl-button text="Default Button"></sympl-button>
+    <sympl-button text="Primary Button" primary="true"></sympl-button>
+    <sympl-button #splitBtn text="Split Button" id="splitBtn" split="0"></sympl-button>
+    <sympl-button #customStyle text="CustomStyle JS" primary="true"></sympl-button>
+    <sympl-button text="CustomStyle CSS = FAIL" className="custom-style-btn"></sympl-button>
+    <sympl-datepicker placeholder="Select a Date..." label="Date Picker"></sympl-datepicker>
+    <sympl-datepicker #formattedDate placeholder="Select a Date..." label="Formatted Date" id="formattedDatePicker"></sympl-datepicker>
+    <sympl-datepicker #dateWithValue placeholder="Select a Date..." label="Date With Value" id="valueDatePicker"></sympl-datepicker>
   </div>
-</body>
-
-</html>
+</div>
