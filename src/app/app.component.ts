@@ -1,10 +1,11 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { purpleDarkTheme, purpleTheme } from './themeing';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  encapsulation: ViewEncapsulation.None // Needed to get CSS styling to work on our web components - or could modify global styles.css
 })
 export class AppComponent implements AfterViewInit {
   @ViewChild('splitBtn') splitBtn!: ElementRef;

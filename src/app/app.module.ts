@@ -3,7 +3,8 @@ import {
   CUSTOM_ELEMENTS_SCHEMA,
   NgModule
 } from '@angular/core';
-import SymplrWebcomponents from 'fluent-webcomponent-exporter';
+import SymplButton from 'fluent-webcomponent-exporter/build/SymplButton';
+import SymplDatePicker from 'fluent-webcomponent-exporter/build/SymplDatePicker';
 
 import { AppComponent } from './app.component';
 
@@ -13,7 +14,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  entryComponents: [SymplrWebcomponents],
+  entryComponents: [SymplButton, SymplDatePicker],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

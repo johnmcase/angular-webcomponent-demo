@@ -9,9 +9,9 @@
     "@angular/platform-browser": "~9.1.11",
     "@angular/platform-browser-dynamic": "~9.1.11",
     "@angular/router": "~9.1.11",
-    "@uifabric/styling": "^7.13.1",
+    "@uifabric/styling": "^7.13.4",
     "@webcomponents/webcomponentsjs": "^2.4.3",
-    "fluent-webcomponent-exporter": "file:../fluent-webcomponent-exporter",
+    "fluent-webcomponent-exporter": "0.0.2",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
@@ -33,7 +33,6 @@
     "karma-jasmine": "~3.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
     "protractor": "~7.0.0",
-    "react": "^16.13.1",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"

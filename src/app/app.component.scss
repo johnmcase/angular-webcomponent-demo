@@ -1,17 +1,18 @@
 // This is the app.component.scss
+app-root {
+  .container {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
 
-.container {
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-.custom-style-btn {
-  background-color: pink;
-  color: green;
-  font-weight: 200;
+  .custom-style-btn {
+    background-color: pink;
+    color: green;
+    font-weight: 200;
+  }
 }
